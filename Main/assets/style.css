@@ -1,0 +1,166 @@
+@charset "utf-8";
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  background-size: cover;
+  background-image: url('1.jpg');
+  background-repeat: no-repeat;
+  padding: 15px;
+  text-align: center;
+  color: #031163;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #031163;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 23px;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+body {
+  margin: 0;
+  font-family: 'Trebuchet MS', sans-serif;
+  min-height: 100vh;
+}
+
+.content {
+  background-color: white;
+  padding: 10px;
+  height: 200px;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+  background-image: url('1.jpg');
+  background-repeat: no-repeat;
+}
+
+.ascii-area {
+  background-color: white;
+  padding: 35px;
+  height: 450px;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+input[type=text], select, textarea {
+  width: 60%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+  height: 60px;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 17px;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+}
+
+input[type=submit] {
+  background-color: #1fbfb8;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: none;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+}
+
+input[type=submit]:hover {
+  background-color: #05716c;
+}
+
+input[type=reset] {
+  background-color: #1fbfb8;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: none;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+}
+
+input[type=reset]:hover {
+  background-color: #05716c;
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit], input[type=reset] {
+    width: 100%;
+    margin-top: 7px;
+  }
+}
+
+.footer {
+  position: fixed;
+  width: 100vw;
+  padding-top: 10px;
+  height: auto;
+  font-family: 'Trebuchet MS', sans-serif;
+  background-color: #031163;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 256px;
+}
+
+@media (max-width: 500px) {
+  .footer p {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+.about {
+  background-image: url("Reboot-Logo.webp");
+  background-repeat: no-repeat;
+}

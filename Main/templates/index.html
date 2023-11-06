@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <!-- makes the head responsive on any device -->
+     <!-- importing Bootstrap framework -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="assets/style.css" type="text/css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="#">
+
+    <!-- Title that appears as name of page -->
+    <title>Home</title>
+    
+</head>
+
+<body>
+
+  <!-- navigation bar -->
+  <div class="header">
+    <h1 class="title">Ascii Art Web</h1>
+    <p class="sub">Stylize</p>
+  </div>
+  
+  <div class="topnav">
+    <a href="/">Home</a>
+   <!-- <a href="/Main/templates/about">About</a> -->
+  </div>
+
+    <!-- End of navigation bar -->
+
+        <!-- form -->
+
+        <div class="content">
+          <div class="container">
+          <form action="/ascii-art" method="POST">
+          <div class="row">
+            <div class="col-25">
+              <label for="text">Text</label>
+            </div>
+            <div class="col-75">
+              <textarea id="text" name="text" placeholder="Write something.." rows="2"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="banner">Banner</label>
+            </div>
+            <div class="col-75">
+              <select id="banner" name="banner">
+                <option value="standard">Standard</option>
+                <option value="shadow">Shadow</option>
+                <option value="thinkertoy">Thinkertoy</option>
+              </select>
+            </div>
+          </div>
+          <br>
+
+          <!-- Buttons -->
+
+         
+           <div class="row">
+        <div class="col-25"></div>
+        <div class="col-75">
+          <input type="submit" value="Generate Ascii Art">
+          <input type="reset" value="Reset">
+        </div>
+      </div>
+    </form>
+  </div>
+
+
+      <!-- end of form -->
+      </div>  
+    </div>
+    
+    <!-- footer -->
+    <div class="footer">
+      <p>copyright &copy;2023 reboot01 students </p>
+    </div>
+    <!-- end of footer -->
+
+</body>
+
+</html>
