@@ -73,7 +73,7 @@ func asciiArtHandler(w http.ResponseWriter, r *http.Request) {
 			return
 		}
 
-		tmpl, err := template.ParseFiles("templates/ascii-art")
+		tmpl, err := template.ParseFiles("templates/ascii-art.html")
 		if err != nil {
 			http.Error(w, err.Error(), http.StatusInternalServerError)
 			return
