@@ -149,25 +149,43 @@ input[type=reset]:hover {
   color: white;
   text-align: center;
   font-size: 12px;
-  margin-top: 478px;
+  margin-top: 256px;
 }
 
 @media (max-width: 500px) {
   .footer p {
     display: flex;
     margin-top: 10px;
-    text-align: center;
     margin-bottom: 20px;
-    font-size: 10px;
-    line-height: 1.2;
-    justify-content: center; /* Center the text horizontally */
-    align-items: center; /* Center the text vertically */
-    height: 100%; /* Ensure the paragraph takes the full height of the footer */
   }
 }
-
 
 .about {
   background-image: url("Reboot-Logo.webp");
   background-repeat: no-repeat;
 }
+
+  .error-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  }
+  .error-title {
+  font-size: 3em;
+  color: #333;
+  }
+  .error-subtitle {
+  font-size: 1.5em;
+  color: #777;
+  }
+  .error-btn {
+  font-size: 1.2em;
+  color: #fff;
+  background-color: #333;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  }
