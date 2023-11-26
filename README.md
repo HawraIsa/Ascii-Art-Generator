@@ -15,7 +15,7 @@ Ascii Art Web Stylize is a web application that allows users to generate ASCII a
 ## Usage: how to run
 
 1. Clone the repository.
-2. Navigate to the root directory of the project.
+2. Navigate to the root directory of the project --> Main.
 3. Run the command `go run main.go`.
 4. Open your browser and navigate to "http://localhost:8080".
 
