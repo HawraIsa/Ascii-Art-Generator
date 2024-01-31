@@ -24,7 +24,10 @@
        <div class="topnav">
           <a href="/">Go Back</a>
           <!--<a href="/Main/templates/about">About</a>-->
+          <a href="/ascii-art/download?result={{.Result}}" class="download-button">Download</a>
+
        </div>
+
 
     <!-- End of navigation bar -->
 
@@ -40,7 +43,7 @@
         
     <!-- footer -->
       <div class="footer">
-        <p>copyright &copy;2023 reboot01 students </p>
+        <p>copyright &copy;2024 reboot01 students </p>
       </div>
 
     <!-- end of footer -->

@@ -23,6 +23,8 @@ func main() {
 
 	http.HandleFunc("/ascii-art", asciiArtHandler)
 
+	http.HandleFunc("/ascii-art/download", downloadHandler)
+
 	fmt.Println("Serving http://localhost:8080/")
 	fmt.Println("Opening in Browser...")
 	err := http.ListenAndServe(":8080", nil)
@@ -149,6 +151,22 @@ func asciiArtHandler(w http.ResponseWriter, r *http.Request) {
 		w.WriteHeader(404)
 		w.WriteHeader(http.StatusNotFound)
 		tmpl.Execute(w, nil)
+	}
+}
+
+func downloadHandler(w http.ResponseWriter, r *http.Request) {
+	// Retrieve the result from the form data
+	result := r.FormValue("result")
+
+	// Set the appropriate headers for file download
+	w.Header().Set("Content-Disposition", "attachment; filename=Ascii-Art.txt")
+	w.Header().Set("Content-Type", "text/plain")
+
+	// Write the result to the response writer
+	_, err := w.Write([]byte(result))
+	if err != nil {
+		http.Error(w, "Failed to send file", http.StatusInternalServerError)
+		return
 	}
 }
 
