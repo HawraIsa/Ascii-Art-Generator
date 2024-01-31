@@ -1,6 +1,8 @@
-package asciiartwebstylize
+package asciiartwebexportfile
 
-import ("strings")
+import (
+	"strings"
+)
 
 func Validate(input string) bool {
 	if input == "" {

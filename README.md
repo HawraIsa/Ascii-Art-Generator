@@ -4,7 +4,7 @@ Ascii Art Web is a web application that allows users to generate ASCII art from 
 
 ## Description
 
-Ascii Art Web Stylize is a web application that allows users to generate ASCII art from text and various banner styles. The application provides a user-friendly interface for users to input their desired text and select a banner style. The application then processes the input and generates the corresponding ASCII art. This project utilizes css in style.css file that been created to make a universal style for the website. 
+Ascii Art Web export file is a web application that allows users to generate ASCII art from text and various banner styles. The application provides a user-friendly interface for users to input their desired text and select a banner style. The application then processes the input and generates the corresponding ASCII art and provides download option after that. This project utilizes css in style.css file that been created to make a universal style for the website. 
 
 ## Authors
 

@@ -1,7 +1,7 @@
 package main
 
 import (
-	"asciiartwebstylize"
+	"asciiartwebexportfile"
 	"fmt"
 	"html/template"
 	"net/http"
@@ -93,7 +93,7 @@ func asciiArtHandler(w http.ResponseWriter, r *http.Request) {
 		text := r.FormValue("text")
 		banner := r.FormValue("banner")
 		// validate font & text
-		if !asciiartwebstylize.Validate(text) || !asciiartwebstylize.Validatefont(banner) {
+		if !asciiartwebexportfile.Validate(text) || !asciiartwebexportfile.Validatefont(banner) {
 			tmpl, err := template.ParseFiles("templates/400.html")
 
 			if err != nil {
@@ -129,7 +129,7 @@ func asciiArtHandler(w http.ResponseWriter, r *http.Request) {
 		// Replace with a new line only
 		lines := strings.ReplaceAll(text, "\r\n", "\n")
 		// generate ascii
-		result := asciiartwebstylize.Matching1(lines, banner)
+		result := asciiartwebexportfile.Matching1(lines, banner)
 
 		// append ascii to the struct then display ascii art page
 		data := PageData{Result: result}
